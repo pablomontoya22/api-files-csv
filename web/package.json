@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pablomontoya22/api-files-csv.git"
+    "url": "git+https://github.com/pablomontoya22/files-csv-portal.git"
   },
   "keywords": [
     "React"
@@ -17,7 +17,7 @@
   "author": "Pablo Montoya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pablomontoya22/api-files-csv/issues"
+    "url": "https://github.com/pablomontoya22/files-csv-portal/issues"
   },
   "jest": {
     "moduleNameMapper": {
