@@ -1,0 +1,27 @@
+.noData {
+  padding: 1em;
+  background-color: #f2f2f2;
+  border: 1px solid #e2e5e9;
+}
+
+.title {
+    padding: 20px 0 5px;
+}
+
+.formStyle {
+    padding: 1em 0;
+}
+
+.overflow {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.3;
+  background-color: #e6e6e6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #ff0101;
+}

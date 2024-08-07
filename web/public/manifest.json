@@ -1,0 +1,15 @@
+{
+  "short_name": "Archivos CSV",
+  "name": "Web para la consulta de Archivos CSV",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

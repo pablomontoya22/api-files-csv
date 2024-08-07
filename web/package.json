@@ -1,0 +1,62 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Web para la consulta de Archivos CSV",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "jest --env=jsdom --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablomontoya22/api-files-csv.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Pablo Montoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablomontoya22/api-files-csv/issues"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "axios": "^1.7.3",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.26.0",
+    "react-scripts": "^5.0.1",
+    "redux": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/react": "^16.0.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.3.1"
+  }
+}

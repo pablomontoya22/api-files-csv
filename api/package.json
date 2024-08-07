@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API para la consulta de Archivos CSV",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --timeout 30000",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablomontoya22/api-files-csv.git"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Pablo Montoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablomontoya22/api-files-csv/issues"
+  },
+  "homepage": "https://github.com/pablomontoya22/api-files-csv#readme",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mocha": "^10.7.0",
+    "nodemon": "^3.1.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
