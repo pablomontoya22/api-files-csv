@@ -7,6 +7,11 @@ const app = express()
 
 app.use(cors())
 
+app.use((_req, res, next) => {
+  res.setHeader("Content-Type", "application/json")
+  next()
+})
+
 app.get("/files/data", async (req, res) => {
   const data = [], resp = JSON.parse(await getFiles()), file = req.query.fileName?.trim()
   for (const fileName of file ? resp.files.filter(a => a === file) : resp.files) {
@@ -15,12 +20,10 @@ app.get("/files/data", async (req, res) => {
       lines: parseCSV(await getContent(fileName))
     })
   }
-  res.setHeader("Content-Type", "application/json")
-  res.end(JSON.stringify(data))
+  res.json(data)
 })
 
 app.get("/files/list", async (_req, res) => {
-  res.setHeader("Content-Type", "application/json")
   res.end(await getFiles())
 })
 
